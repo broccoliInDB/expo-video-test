@@ -3,7 +3,7 @@
     "name": "expo-nativewind",
     "slug": "expo-nativewind",
     "version": "1.0.0",
-
+    "newArchEnabled": true,
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -12,7 +12,15 @@
       "tsconfigPaths": true
     },
 
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ]
+    ],
 
     "orientation": "portrait",
     "icon": "./assets/icon.png",
